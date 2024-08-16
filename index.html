@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="./assets/logo.png" alt="Logo do projeto">
+    </header>
+
+    <main>
+    <section class="input-section">
+        <textarea class="text-area" placeholder="Digite seu texto aqui"></textarea>
+        <div class="informacao">
+            <h1>Apenas letras minúsculas e sem acentos.</h1>
+        </div>
+        <div class="buttons">
+            <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
+            <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+        </div>
+    </section>
+
+    <section class="output-section">
+        <textarea class="mensagem" placeholder="Sua mensagem aparecerá aqui..."></textarea>
+        <button class="btn-copiar" onclick="copiar()">Copiar</button>
+        <div id="copy-popup" class="popup">Texto copiado!</div>
+    </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+<footer class="rodape">
+    Desenvolvido por Diogo Henriques Gonçalves
+</footer>
+</html>
